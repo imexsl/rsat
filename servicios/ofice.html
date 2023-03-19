@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IMEX</title>
+    <link rel="stylesheet" href="../css/Ofice.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <!-- Script de la función del desplegable -->
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor" id="cabecera">
+            <a href="../index.html" id="titulo">
+                <!-- esto es un enlace hacia el inicio de la web  -->
+                <h3 href="../index.html" height="30%" width="30%">IMEX</h3>
+            </a>
+            <!-- nav para el ordenador  -->
+            <nav class="topnav" id="myTopnav">
+                <a href="sobrenosotros.html">Sobre nosotros </a>
+                <a href="service.html">Servicios </a>
+                <a href="ofice.html">Oficina Tecnica</a>
+                <a href="Conctactar.html">Contactar</a>
+            </nav>
+            <!-- nav para el movil -->
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <i class="fa fa-bars"></i>
+                <div class="responsive">
+                    <a href="sobrenosotros.html">Sobre nosotros </a>
+                    <a href="service.html">Servicios </a>
+                    <a href="ofice.html">Oficina Tecnica</a>
+                    <a href="Conctactar.html">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    </head>
+    </div>
+    <!-- el inicio de la pagina  -->
+    <div id="cajafoto">
+        <div id="cajatexto">
+            <h3>Oficina Tecnica</h3>
+        </div>
+    </div>
+    <!-- Es un parrafo de la información de mi empresa  -->
+    <p class="text ">IMEX cuenta con departamento técnico para ofrecer a nuestros clientes soluciones de contrastada
+        eficacia en el mercado:
+
+        Elaboración de informes técnicos en todo lo relativo a soluciones de impermeabilización/protección de
+        estructuras y aplicación de productos químicos para la construcción tales como resinas epoxi/poliuretano.
+
+        Estudio para la reparación y el cálculos de refuerzos estructurales de hormigón a base de morteros de reparación
+        estructural según UNE EN 1504 y aplicación de fibra de carbono.
+    </p>
+    <div>
+    <img src="../img/Oficinatecnica.jpg" class="foto">
+    </div>
+     <!-- footer de la pagina con las redes sociales de la empresa  -->
+    <footer>
+        <div class="contenedor" id="redes-sociales">
+            <a href="https://www.facebook.com/profile.php?id=100089652563216" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/IMEXSL" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/imex.sl/" class="instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+    <!-- Script basico de el desplegable -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
